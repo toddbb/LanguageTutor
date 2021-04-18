@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lexi Tutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='script.js'></script>
+    <script type='text/javascript' src='devOnly.js'></script>
+</head>
+<body>
+    <header class="flexRow">
+        <div class="header_logo">
+            <a href="#" onclick="location.reload(true); return false;">
+                <span class="material-icons md-36">home</span>
+            </a>
+        </div>
+        <div class="header_title">
+            <img src="img/ukLogo60x40.png" width="30" class="flagHeader" id="flagFrom">
+            <span id="header_title_span">My Tutor</span>
+            <img src="img/vnLogo60x40.png" width="30" class="flagHeader" id="flagTo">
+        </div>
+    </header>
+    <section id="loading">
+        <h1>Loading...</h1>
+    </section>
+    <section id="errorPage" hidden>
+        <div id="errorPageMessage"></div>
+    </section>
+    <section id="menu_categories" hidden>
+        <h3 class="section_header">Select a category</h3>
+        <div class="flexCol" id="categoryList"></div>
+    </section>
+    <section id="menu_mode" hidden>
+        <h3 class="section_header">Select a mode</h3>
+        <div class="flexCol" id="modeList">
+            <div class="menu_mode_select selectFlash">
+                <span class="material-icons md-48 selectFlash">style</span>
+                <p class="mode_text selectFlash">Flashcards</p>
+            </div>
+            <div class="menu_mode_select selectQuiz">
+                <span class="material-icons md-48 selectQuiz">quiz</span>
+                <p class="mode_text selectQuiz">Quiz</p>
+            </div>
+        </div>
+        </div>  
+    </section>
+    <section id="flashcards" hidden>
+        <h3 class="section_header" id="flashcard_section_header">{Category}</h3>
+        <div class="scrolling">
+            <div class="scrollArrow scrollLeftClass noSelectBrowser" id="scrollArrowLeft">
+                <span class="material-icons md-36 md-dark md-inactive scrollLeftClass noSelectBrowser" id="scrollLeftSpan">arrow_back</span>
+            </div>
+            <div class="scrollArrow scrollRightClass noSelectBrowser" id="scrollArrowRight">
+                <span class="material-icons md-36 md-dark scrollRightClass noSelectBrowser" id="scrollRightSpan">arrow_forward</span>
+            </div>
+        </div>
+        <div class="flexCol" id="flashcardList">
+            <div class="flashcard_text enBlue" id="en_flashcard">{en}</div>
+            <div class="flashcard_text viRed" id="vi_flashcard">{vi}</div>
+        </div>        
+    </section>    
+    <section id="quiz" hidden>
+    </section>
+    <footer>
+        <div class="footer_dev_only">
+            <button id="testBtn" onclick="devTestBtn()">Test Button</button>
+            <p id="testMessage">Test Message: </p>
+        </div>
+    </footer>
+</body>
+</html>

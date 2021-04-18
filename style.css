@@ -1,0 +1,253 @@
+
+
+:root {
+    --menuBtn: #e7a7a7;
+    --viRed: #bd2424;
+    --enBlue: #13137f;
+    --scrollBtn: rgb(167, 231, 170);
+
+  }
+
+/******************* MAIN PARTS ********************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 330px;
+    background: rgb(250,224,243);
+    background: linear-gradient(180deg, rgba(209,240,246,1) 0%,  rgb(233 224 250) 100%)
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+
+/******************* GLOBAL CLASSES ********************/
+
+.flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viRed {
+    color: var(--viRed);
+}
+
+.enBlue {
+    color: var(--enBlue);
+}
+
+.noSelectBrowser {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/************** GOOGLE MATERIAL ICONS *******************/
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.884); }
+.material-icons.md-dark.md-inactive { 
+    color: rgba(0, 0, 0, 0.26);
+
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { 
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Custom */
+.material-icons.orange600 { color: #FB8C00; }
+
+
+
+
+/**************** HEADER ********************/
+
+header {
+    background: rgba(51,51,51,0.05);
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.header_title {    
+    font-family: 'Luckiest Guy', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-left: 25px; /**** only for small screens ****/
+}
+
+.header_logo {
+    position: absolute;
+    left: 20px;
+    cursor:pointer;
+}
+
+.header_logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.flagHeader {
+    padding: 12px;
+}
+
+
+
+/**********  SECTIONS: ALL   ********************/
+section {
+    padding: 20px;
+}
+
+.section_header {
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-size: 1.6em;
+}
+
+.menu_category_select, .menu_mode_select {
+    background: var(--menuBtn);
+    text-align: center;
+    width: 150px;
+    border-radius: 15px;
+    margin: 1em;
+    padding: 0.7em 1.6em;
+    cursor: pointer;    
+    box-shadow: #979797 0 0 3px 0px;
+    color: #525252;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#menu_mode, #flashcards, #quiz {
+    height: calc(100vh - 180px);
+    min-height: 500px;
+}
+
+
+/**********  SECTIONS: LOADING  ********************/
+
+
+
+/**********  SECTIONS: MENU CATEGORIES  ********************/
+
+
+
+
+
+/**********  SECTIONS: MENU MODE  ********************/
+#menu_mode {
+    height: calc(100vh - 180px);
+}
+
+#menu_mode > .section_header {
+    margin-bottom: 50px;
+}
+
+
+/****************  SECTIONS: FLASHCARDS  ********************/
+#flashcards {
+    max-width: 700px;
+    margin: auto;
+}
+
+.scrolling {
+    position: relative;
+    top: calc(50% - 120px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+}
+
+.scrollArrow {
+    border-radius: 50%;
+    padding: 5px 4px 0px 4px;
+    background: rgb(244 210 224);
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: #999 0px 0px 3px 0px;
+}
+
+#scrollRightSpan, #scrollLeftSpan {
+    font-weight: bold;
+}
+
+#flashcardList {    
+    position: relative;
+    top: -60px;
+    height: calc(80%);
+    justify-content: space-around;
+    font-size: 2.2em;
+    font-weight: 600;
+    padding: 0px 60px;
+}
+
+
+
+/****************  SECTIONS: QUIZ  ********************/
+
+
+
+/****************  SECTIONS: ERROR PAGE  ********************/
+
+
+
+
+/****************  FOOTER  ********************/
+footer {
+    background: #444;
+    color: #fcfcfc;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_dev_only {
+    display: true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
