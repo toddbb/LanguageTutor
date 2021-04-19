@@ -3,15 +3,6 @@
 //
 /*********** DEV ONLY **************/
 
-/* window.onload = (event) => {
-  useDevObject();
-}; */
-
-
-function devTestBtn() {
-    console.log("Dev Test Btn clicked...")
-
-}
 
 
 function initDev() {

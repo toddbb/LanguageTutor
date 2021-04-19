@@ -65,12 +65,36 @@
         </div>        
     </section>    
     <section id="quiz" hidden>
+        <div class="quiz_container flexCol">
+            <div class="quiz_header_container">
+                <h3 class="section_header" id="quiz_section_header">Choose the correct translation</h3>
+            </div>
+            <div id="quiz_question"><i>placeholder</i></div>
+            <div id="quiz_multiChoice_container" class="flexCol">
+                <div class="quiz_multiChoice_options flexRow noSelectBrowser" id="quiz_optionA">
+                    <div class="quiz_choice_letter" id="quiz_letter_optionA">A</div>
+                    <div class="quiz_choice_text" id="optionA">OptionA</div>
+                </div>
+                <div class="quiz_multiChoice_options flexRow noSelectBrowser" id="quiz_optionB">
+                    <div class="quiz_choice_letter" id="quiz_letter_optionB">B</div>
+                    <div class="quiz_choice_text" id="optionB">OptionB</div>
+                </div>
+                <div class="quiz_multiChoice_options flexRow noSelectBrowser" id="quiz_optionC">
+                    <div class="quiz_choice_letter" id="quiz_letter_optionC">C</div>
+                    <div class="quiz_choice_text" id="optionC">OptionC</div>
+                </div>
+                <div class="quiz_multiChoice_options flexRow noSelectBrowser" id="quiz_optionD">
+                    <div class="quiz_choice_letter" id="quiz_letter_optionD">D</div>
+                    <div class="quiz_choice_text" id="optionD">OptionD</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
+    <!-- <footer hidden>
         <div class="footer_dev_only">
             <button id="testBtn" onclick="devTestBtn()">Test Button</button>
             <p id="testMessage">Test Message: </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
